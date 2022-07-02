@@ -106,7 +106,7 @@ root.render(<App />);
 ```js
 import { memo } from "react";
 
-const Todos = ({ todos }) => {
+const Todo = ({ todos }) => {
   return (
     <>
       <h2>My Todo List</h2>
@@ -117,7 +117,7 @@ const Todos = ({ todos }) => {
   );
 };
 
-export default memo(Todos);
+export default memo(Todo);
 ```
 
 Now the `Todo` component only re-renders when the `todos` that are passed to it through props are updated.
